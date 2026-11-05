@@ -1,6 +1,8 @@
+import './StatusBar.css'
+
 function StatusBar() {
   return (
-    <footer className="status-bar">First draft — layout only</footer>
+    <footer className="status-bar">Camera progress</footer>
   )
 }
 

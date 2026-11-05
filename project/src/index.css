@@ -19,17 +19,23 @@ body {
   background: var(--background);
 }
 
-button {
-  font: inherit;
-}
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 16px;
 }
 
-h1 { font-size: 24px; }
-h2 { font-size: 18px; }
-h3 { font-size: 16px; }
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
 
 p {
   color: var(--muted);

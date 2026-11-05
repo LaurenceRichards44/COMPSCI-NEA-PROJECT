@@ -1,3 +1,5 @@
+import './Viewport.css'
+
 function Viewport() {
   return (
     <section className="viewport" aria-labelledby="viewport-heading">

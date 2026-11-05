@@ -1,0 +1,5 @@
+.viewport {
+  padding: 16px;
+  min-height: 400px;
+  background: var(--background);
+}

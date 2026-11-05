@@ -1,3 +1,5 @@
+import './Toolbar.css'
+
 function Toolbar() {
   return (
     <aside className="toolbar" aria-labelledby="tools-heading">

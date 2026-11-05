@@ -1,0 +1,22 @@
+.gesture-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-left: 1px solid var(--border);
+  background: var(--panel);
+}
+
+@media (max-width: 700px) {
+  .gesture-panel {
+    border: 0;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+.webcam-panel {
+  flex: 1;
+}
+
+.gesture-controls {
+  flex: 3;
+}
