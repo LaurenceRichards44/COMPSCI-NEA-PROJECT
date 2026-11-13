@@ -14,9 +14,9 @@
 }
 
 .webcam-panel {
-  flex: 1;
+  flex: 37;
 }
 
 .gesture-controls {
-  flex: 3;
+  flex: 63;
 }

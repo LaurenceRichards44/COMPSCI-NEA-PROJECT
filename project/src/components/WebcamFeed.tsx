@@ -1,9 +1,10 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import './WebcamFeed.css'
 
 
 function WebcamFeed() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMirrored, setIsMirrored] = useState(false);
 
   useEffect(() => {
     let stream: MediaStream | null = null;
@@ -37,12 +38,25 @@ function WebcamFeed() {
   }, [])
 
   return (
-    <video
-      ref={videoRef}
-      autoPlay
-      playsInline
-      muted
-      className="webcam-video"></video>
+    <>
+      <label>
+        <input
+          type="checkbox"
+          role="switch"
+          checked={isMirrored}
+          onChange={() => setIsMirrored(!isMirrored)}
+        />
+        Mirror Video
+      </label>
+      
+      <video
+        ref={videoRef}
+        autoPlay
+        playsInline
+        muted
+        style={{ transform: isMirrored ? 'scaleX(-1)' : 'none' }}
+        className="webcam-video"></video>
+    </>
   )
 }
 
