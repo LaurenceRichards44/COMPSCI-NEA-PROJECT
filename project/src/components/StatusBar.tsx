@@ -2,7 +2,7 @@ import './StatusBar.css'
 
 function StatusBar() {
   return (
-    <footer className="status-bar">Camera progress</footer>
+    <footer className="status-bar">Placeholder</footer>
   )
 }
 
